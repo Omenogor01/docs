@@ -1,119 +1,71 @@
 ---
-title: "The Omen Documentation Blog"
-description: "Where great docs meet actionable insights"
+title: Introduction
+description: "Welcome to the home of your new documentation"
 ---
 
-<!-- Updated Hero Section Using Mintlify Image Toggle -->
-<div className="text-center mb-16">
-  <div className="relative h-64">
-    <img
-      className="absolute w-full h-full object-contain dark:hidden"
-      src="/images/blog-hero-light.png"
-      alt="Documentation tips and tutorials"
-    />
-    <img
-      className="absolute w-full h-full object-contain hidden dark:block"
-      src="/images/blog-hero-dark.png"
-      alt="Documentation insights"
-    />
-  </div>
-  
-  <h1 className="text-4xl font-bold mt-8 mb-4">Craft Exceptional Docs</h1>
-  <p className="text-xl text-gray-600 dark:text-gray-300 mb-6">
-    Weekly tutorials, case studies, and pro tips for technical writers
-  </p>
-</div>
+<img
+  className="block dark:hidden"
+  src="/images/hero-light.png"
+  alt="Hero Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/hero-dark.png"
+  alt="Hero Dark"
+/>
 
-<!-- Blog-Style "Getting Started" Section -->
-## Latest Guides
+## Setting up
+
+The first step to world-class documentation is setting up your editing environments.
 
 <CardGroup cols={2}>
   <Card
-    title="🚀 Launch Your Docs"
-    icon="rocket"
-    href="/guides/quickstart"
-    className="hover:border-primary-500 transition-colors"
+    title="Edit Your Docs"
+    icon="pen-to-square"
+    href="https://mintlify.com/docs/quickstart"
   >
-    <img 
-      src="/images/guides/launch-docs.png"
-      alt=""
-      className="mb-3 rounded-lg"
-    />
-    Step-by-step setup guide with best practices
-    <div className="text-sm text-muted mt-2">Updated: Jan 2025</div>
+    Get your docs set up locally for easy development
   </Card>
-
   <Card
-    title="🎨 Design System Deep Dive"
+    title="Preview Changes"
+    icon="image"
+    href="https://mintlify.com/docs/development"
+  >
+    Preview your changes before you push to make sure they're perfect
+  </Card>
+</CardGroup>
+
+## Make it yours
+
+Update your docs to your brand and add valuable content for the best user conversion.
+
+<CardGroup cols={2}>
+  <Card
+    title="Customize Style"
     icon="palette"
-    href="/guides/styling"
-    className="hover:border-primary-500 transition-colors"
+    href="https://mintlify.com/docs/settings/global"
   >
-    <img 
-      src="/images/guides/style-guide.png"
-      alt=""
-      className="mb-3 rounded-lg"
-    />
-    Create consistent brand experiences
-    <div className="text-sm text-muted mt-2">15 min read</div>
+    Customize your docs to your company's colors and brands
   </Card>
-</CardGroup>
-
-<!-- "Pro Tips" Blog Section -->
-## Pro Tips of the Week
-
-<CardGroup cols={2}>
   <Card
-    title="💡 Version Control Strategies"
-    icon="git-branch"
-    href="/best-practices/versioning"
-  >
-    Keep your docs in sync with product releases
-    <Tag className="mt-2">Git Integration</Tag>
-  </Card>
-
-  <Card
-    title="📈 Analytics Setup Guide"
-    icon="chart-pie"
-    href="/guides/analytics"
-  >
-    Track documentation engagement effectively
-    <Tag className="mt-2">Case Study</Tag>
-  </Card>
-</CardGroup>
-
-<!-- Newsletter CTA Using Docs Components -->
-<div className="bg-primary-50 dark:bg-primary-900 p-6 rounded-xl mt-12">
-  <h3 className="text-2xl font-bold mb-4">📬 Doc Writer's Digest</h3>
-  <p className="mb-4">
-    Get weekly documentation tips directly in your inbox
-  </p>
-  <Button 
-    href="/subscribe" 
-    icon="envelope"
-    variant="secondary"
-  >
-    Subscribe to Newsletter
-  </Button>
-</div>
-
-<!-- Maintain Core Docs Structure -->
-## Essential Resources
-
-<CardGroup cols={2}>
-  <Card
-    title="API Reference Guide"
+    title="Reference APIs"
     icon="code"
-    href="/reference/api"
+    href="https://mintlify.com/docs/api-playground/openapi"
   >
-    Master OpenAPI integration
+    Automatically generate endpoints from an OpenAPI spec
   </Card>
-  
   <Card
-    title="Component Library"
-    icon="toolbox"
-    href="/components/overview"
+    title="Add Components"
+    icon="screwdriver-wrench"
+    href="https://mintlify.com/docs/content/components/accordions"
   >
-    Interactive element showcase
+    Build interactive features and designs to guide your users
+  </Card>
+  <Card
+    title="Get Inspiration"
+    icon="stars"
+    href="https://mintlify.com/customers"
+  >
+    Check out our showcase of our favorite documentation
   </Card>
 </CardGroup>
