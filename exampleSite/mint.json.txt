@@ -1,0 +1,6 @@
+{
+  "name": "geeky-hugo",
+  "description": "Your project description",
+  "buildCommand": "hugo --themesDir ../.. --gc --minify",
+  "publishDirectory": "public"
+}
