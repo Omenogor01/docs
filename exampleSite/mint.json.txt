@@ -1,6 +1,156 @@
 {
+  "$schema": "https://mintlify.com/schema.json",
   "name": "geeky-hugo",
-  "description": "Your project description",
-  "buildCommand": "hugo --themesDir ../.. --gc --minify",
-  "publishDirectory": "public"
+  "openapi": "https://campaign-cleaner.github.io/swagger/campaigncleaner.yaml", 
+  "logo": {
+    "dark": "/logo/cclogorefreshwhite45.png",
+    "light": "/logo/cclogorefresh50.png",
+    "href": "https://campaigncleaner.com"
+  },
+   "api": {
+    "baseUrl": "https://api.campaigncleaner.com"   
+  },
+  "favicon": "/logo/cc64.png",
+  "colors": {
+    "primary": "#054587",
+    "light": "#0067f4",
+    "dark": "#054587",
+    "anchors": {
+      "from": "#0D9373",
+      "to": "#07C983"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Support",
+      "url": "https://campaigncleaner.com/contact.html"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Dashboard",
+    "url": "https://members.campaigncleaner.com"
+  },
+  "tabs": [
+    {
+      "name": "API Reference",
+      "url": "api-reference"
+    }
+  ],
+  "anchors": [    
+  ],
+     "navigation": [
+    {
+      "group": "Campaign Managmement",
+      "pages": ["campaign-cleaner/clean-campaign", "campaign-cleaner/campaign-analysis", "campaign-cleaner/settings","campaign-cleaner/saved-campaigns","campaign-cleaner/import-campaigns"]
+    },
+    {
+  "group": "Features & Settings",
+  "pages": [
+    "features-settings/spam-trigger-detection",
+    "features-settings/alt-and-title-attribute-management",
+    "features-settings/background-image-detection",
+    "features-settings/blacklisted-links",
+    "features-settings/classes-and-id-removal",
+    "features-settings/control-and-non-printable-characters",
+    "features-settings/convert-attributes-to-styles",
+    "features-settings/convert-relative-urls",
+    "features-settings/css-inliner",
+    "features-settings/diacritics-character-replacement",
+    "features-settings/email-inbox-previews",
+    "features-settings/font-color-adjustments",
+    "features-settings/font-size-enforcement",
+    "features-settings/h-to-p-tag-conversion",
+    "features-settings/height-attribute-removal",
+    "features-settings/html-comment-removal",
+    "features-settings/html-entities",
+    "features-settings/html-fragment",
+    "features-settings/html-minifier",
+    "features-settings/html-sanitizer",
+    "features-settings/inherited-css-removal",
+    "features-settings/large-width-removal",
+    "features-settings/link-summary",
+    "features-settings/non-ascii-character-replacement",
+    "features-settings/image-summary",
+    "features-settings/poor-delivery-cdn-detection",
+    "features-settings/preheader-management",
+    "features-settings/punctuation-caps-h-tags",
+    "features-settings/resize-and-host",
+    "features-settings/send-previews",
+    "features-settings/set-max-width-of-images",
+    "features-settings/spamassassin-score",
+    "features-settings/surrounding-html-div",
+    "features-settings/tables-to-divs-conversion",
+    "features-settings/text-to-image-analysis",
+    "features-settings/text-to-link-analysis",
+    "features-settings/unsecured-links",
+    "features-settings/unsupported-image-detection"
+  ]
+}
+,
+    {
+      "group": "Other Tools",
+      "pages": [
+        "other-tools/inbox-placement-tester",
+        "other-tools/mx-vision"
+      ]
+    },
+    {
+      "group": "Integrations",
+      "pages": ["integrations/integrations"]
+    },
+     {
+      "group": "Management",
+      "pages": [
+        "management/api",
+        "management/api-management",
+        "management/cdn-management"
+      ]
+    }, 
+    {
+      "group": "Account Info",
+      "pages": [
+        "account-info/manage-users",
+        "account-info/securing-your-account"
+      ]
+    }, 
+    {
+      "group": "References",
+      "pages": [
+        "references/https-status-codes",
+        "references/embedded-images",
+         "references/campaign-cleaner-quirks"
+      ]
+    }, 
+     {
+      "group": "Legal and Compliance",
+      "pages": [
+        "legal-and-compliance/legal-policies",
+        "legal-and-compliance/privacy-policy",
+        "legal-and-compliance/terms-of-use",
+        "legal-and-compliance/gdpr",
+        "legal-and-compliance/ccpa",
+        "legal-and-compliance/acceptable-use-policy",
+        "legal-and-compliance/subprocessors",
+        "legal-and-compliance/data-processing-addendum",
+        "legal-and-compliance/cookie-policy"
+         ]
+    }, 
+      {
+      "group": "API Reference",
+      "pages": ["api-reference/introduction",
+       {
+      "group": "API Endpoints",
+      "pages": [
+        "api-reference/endpoint/delete-campaign",
+        "api-reference/endpoint/get-campaign-list",
+        "api-reference/endpoint/get-campaign-status",
+        "api-reference/endpoint/get-campaign",
+        "api-reference/endpoint/get-campaign-pdf-analysis",
+        "api-reference/endpoint/get-credits",
+        "api-reference/endpoint/send-campaign"
+         ]
+      }
+      ]
+      }
+  ]
 }
